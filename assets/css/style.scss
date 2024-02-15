@@ -1,0 +1,104 @@
+@import "appearance";
+@import "interaction";
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: $off-white;
+  font-family: Poppins;
+}
+.container {
+  align-self: center;
+  width: 750px;
+  height: auto;
+  background-color: $white;
+  margin-top: 150px;
+  border-radius: 20px 20px 170px 20px;
+  padding: 50px 40px;
+  #form {
+    display: flex;
+    .form {
+      display: flex;
+      flex-direction: column;
+      margin-right: 30px;
+    }
+    label {
+      color: $smokey-grey;
+      margin-bottom: 5px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+    @include form;
+    input {
+      width: 150px;
+      height: 60px;
+      background-color: transparent;
+      border: 1px solid $light-grey;
+      border-radius: 6px;
+      text-indent: 15px;
+      font-size: 32px;
+      font-weight: 700;
+      color: $off-black;
+      transition: 0.2s;
+    }
+    .error {
+      display: none;
+      margin-top: 5px;
+      font-size: 13px;
+      .invalid {
+        display: none;
+        position: fixed;
+        color: $light-red;
+      }
+      .empty {
+        display: none;
+        position: fixed;
+        color: $light-red;
+      }
+    }
+  }
+
+  &__divider {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    @include btn;
+    .btn {
+      display: grid;
+      align-items: center;
+      justify-items: center;
+      height: inherit;
+      grid-template-columns: 80px;
+      grid-template-rows: 80px;
+      width: 80px;
+      background-color: $purple;
+      border: 0;
+      border-radius: 50%;
+      transition: 0.2s;
+    }
+    .line {
+      width: 650px;
+      height: 2px;
+      background-color: $light-grey;
+    }
+  }
+  &__out {
+    display: flex;
+    flex-direction: column;
+    .line {
+      display: flex;
+      align-items: center;
+      font-size: 80px;
+      font-weight: 800;
+      font-style: italic;
+      height: 80px;
+      .num {
+        color: $purple;
+      }
+      .text {
+        color: $off-black;
+        margin: 0 10px;
+      }
+    }
+  }
+}

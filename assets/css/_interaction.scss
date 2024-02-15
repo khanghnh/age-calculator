@@ -1,0 +1,13 @@
+@mixin btn {
+  .btn:hover {
+    background-color: $off-black;
+  }
+  .btn:active {
+    background-color: $light-grey;
+  }
+}
+@mixin form {
+  input:focus {
+    border: 1px solid $purple;
+  }
+}

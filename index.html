@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Poppins" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Age calculator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__form">
+        <form id="form" name="form">
+          <div class="form day">
+            <label class="label" id="label-day" for="day">DAY</label>
+            <input type="number" placeholder="DD" name="day" id="day" />
+            <div class="error day-error">
+              <div class="invalid" id="invalid-day">Must be a valid day</div>
+              <div class="empty" id="empty-day">This field is required</div>
+            </div>
+          </div>
+          <div class="form month">
+            <label class="label" id="label-month" for="month">MONTH</label>
+            <input type="number" name="month" id="month" placeholder="MM" />
+            <div class="error month-error">
+              <div class="invalid" id="invalid-month">
+                Must be a valid month
+              </div>
+              <div class="empty" id="empty-month">This field is required</div>
+            </div>
+          </div>
+          <div class="form year">
+            <label class="label" id="label-year" for="year">YEAR</label>
+            <input type="number" name="year" id="year" placeholder="YYYY" />
+            <div class="error year-error">
+              <div class="invalid" id="invalid-year">Must be in the past</div>
+              <div class="empty" id="empty-year">This field is required</div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="container__divider">
+        <div class="line"></div>
+        <button onclick="refresh(); calc()" class="btn">
+          <img src="./assets/images/icon-arrow.svg" alt="" />
+        </button>
+      </div>
+      <div class="container__out">
+        <div class="line 1">
+          <p id="num-1" class="num">--</p>
+          <p class="text">years</p>
+        </div>
+        <div class="line 2">
+          <p id="num-2" class="num">--</p>
+          <p class="text">months</p>
+        </div>
+        <div class="line 3">
+          <p id="num-3" class="num">--</p>
+          <p class="text">days</p>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 94%);
+  font-family: Poppins;
+}
+
+.container {
+  align-self: center;
+  width: 750px;
+  height: auto;
+  background-color: hsl(0, 0%, 100%);
+  margin-top: 150px;
+  border-radius: 20px 20px 170px 20px;
+  padding: 50px 40px;
+}
+.container #form {
+  display: flex;
+}
+.container #form .form {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+.container #form label {
+  color: hsl(0, 1%, 44%);
+  margin-bottom: 5px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.container #form input:focus {
+  border: 1px solid hsl(259, 100%, 65%);
+}
+.container #form input {
+  width: 150px;
+  height: 60px;
+  background-color: transparent;
+  border: 1px solid hsl(0, 0%, 86%);
+  border-radius: 6px;
+  text-indent: 15px;
+  font-size: 32px;
+  font-weight: 700;
+  color: hsl(0, 0%, 8%);
+  transition: 0.2s;
+}
+.container #form .error {
+  display: none;
+  margin-top: 5px;
+  font-size: 13px;
+}
+.container #form .error .invalid {
+  display: none;
+  position: fixed;
+  color: hsl(0, 100%, 67%);
+}
+.container #form .error .empty {
+  display: none;
+  position: fixed;
+  color: hsl(0, 100%, 67%);
+}
+.container__divider {
+  display: flex;
+  height: 80px;
+  align-items: center;
+}
+.container__divider .btn:hover {
+  background-color: hsl(0, 0%, 8%);
+}
+.container__divider .btn:active {
+  background-color: hsl(0, 0%, 86%);
+}
+.container__divider .btn {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  height: inherit;
+  grid-template-columns: 80px;
+  grid-template-rows: 80px;
+  width: 80px;
+  background-color: hsl(259, 100%, 65%);
+  border: 0;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+.container__divider .line {
+  width: 650px;
+  height: 2px;
+  background-color: hsl(0, 0%, 86%);
+}
+.container__out {
+  display: flex;
+  flex-direction: column;
+}
+.container__out .line {
+  display: flex;
+  align-items: center;
+  font-size: 80px;
+  font-weight: 800;
+  font-style: italic;
+  height: 80px;
+}
+.container__out .line .num {
+  color: hsl(259, 100%, 65%);
+}
+.container__out .line .text {
+  color: hsl(0, 0%, 8%);
+  margin: 0 10px;
+}/*# sourceMappingURL=style.css.map */
